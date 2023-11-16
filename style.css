@@ -21,7 +21,7 @@ body {
 .navlist {
     list-style-type: none;
     display: inline-block;
-    margin: 45px 30px 0 30px;
+    margin: 20px 30px 0 30px;
     border: solid 3px #002060;
     padding: 8px 15px 8px 15px;
 
@@ -44,7 +44,7 @@ body {
 
 .homemain {
     text-align: center;
-    margin-top: 180px;
+    margin-top: 150px;
     font-size: 30px;
 }
 
@@ -52,10 +52,21 @@ body {
     color: white;
 }
 
+#pftitle {
+    font-family: Aptos-Extrabold;
+    font-size: 35px;
+}
+
+#homedesc {
+    font-size: 24px;
+    color: hsl(0, 0%, 82%);
+}
+
 .about {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 70px;
     height: 500px;
+    overflow: hidden;
 }
 
 .abdesc {
