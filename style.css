@@ -9,8 +9,8 @@
 }
 
 body {
+    font-family: Aptos, Aptos-Extrabold;
     background-color: #002060;
-    font-family: Aptos;
 }
 
 .navbar {
@@ -27,12 +27,13 @@ body {
 }
 
 .navbar .navlist:hover {
-    background-color: #00B0F0;
     color: #002060;
+    background-color: #00B0F0;
     border: solid 3px #00B0F0;
     border-radius: 30px;
+    font-weight: bold;
     padding: 8px 15px 8px 15px;
-    transition: .2s;
+    transition: .25s;
 }
 
 .link {
@@ -97,14 +98,41 @@ body {
 #abdesc {
     color: white;
     font-size: 20px;
-    width: 700px;
+    width: 670px;
 }
 
 .abimg {
     width: 500px;
     display: inline-block;
     position: relative;
-    top: 10px;
+    top: -90px;
+}
+
+#link {
+    text-decoration: none;
+}
+
+#resume {
+    text-decoration: none;
+    color: #002060;
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #00B0F0;
+    border: solid 3px #00B0F0;
+    width: 120px;
+    border-radius: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+#link #resume:hover {
+    width: 140px;
+    transition: .2s;
+}
+
+.navbar #project:active {
+    margin-top: -50px;
 }
 
 .contact {
