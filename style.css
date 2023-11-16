@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Aptos;
+    src: url(fonts/aptos.ttf);
+}
+
+@font-face {
+    font-family: Aptos-Extrabold;
+    src: url(fonts/aptos-extrabold.ttf);
+}
+
+body {
+    background-color: #002060;
+    font-family: Aptos;
+}
+
+.navbar {
+    font-size: 32px;
+    text-align: center;
+}
+
+.navlist {
+    list-style-type: none;
+    display: inline-block;
+    margin: 45px 30px 0 30px;
+    border: solid 3px #002060;
+    padding: 8px 15px 8px 15px;
+
+
+}
+
+.navbar .navlist:hover {
+    background-color: #00B0F0;
+    color: #002060;
+    border: solid 3px #00B0F0;
+    border-radius: 25px;
+    padding: 8px 15px 8px 15px;
+    transition: .15s;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.homemain {
+    text-align: center;
+    margin-top: 180px;
+    font-size: 30px;
+}
+
+.hometext {
+    color: white;
+}
+
+.about {
+    text-align: center;
+    margin-top: 100px;
+    height: 500px;
+}
+
+.abdesc {
+    width: 800px;
+    height: 500px;
+    margin-left: 100px;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+}
+
+#abouthead {
+    font-family: Aptos-Extrabold;
+    color: white;
+    font-size: 60px;
+}
+
+#abline {
+    width: 800px;
+    margin-top: -40px;
+    border: solid 3px white;
+    border-radius: 100px;
+}
+
+#abdesc {
+    color: white;
+    font-size: 25px;
+}
+
+.abimg {
+    width: 500px;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+}
