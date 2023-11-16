@@ -21,30 +21,30 @@ body {
 .navlist {
     list-style-type: none;
     display: inline-block;
-    margin: 20px 30px 0 30px;
     border: solid 3px #002060;
     padding: 8px 15px 8px 15px;
-
-
+    margin: 2% 0 0 0;
 }
 
 .navbar .navlist:hover {
     background-color: #00B0F0;
     color: #002060;
     border: solid 3px #00B0F0;
-    border-radius: 25px;
+    border-radius: 30px;
     padding: 8px 15px 8px 15px;
-    transition: .15s;
+    transition: .2s;
 }
 
 .link {
     text-decoration: none;
     color: white;
+    margin: 2% 30px 0 30px;
+
 }
 
 .homemain {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 9%;
     font-size: 30px;
 }
 
@@ -64,15 +64,17 @@ body {
 
 .about {
     text-align: center;
-    margin-top: 70px;
+    margin: 5% 0 0 5%;
+    margin-top: 5%;
     height: 500px;
     overflow: hidden;
 }
 
 .abdesc {
-    width: 800px;
+    width: 700px;
     height: 500px;
     margin-left: 100px;
+    margin-right: -50px;
     text-align: left;
     display: inline-block;
     position: relative;
@@ -86,20 +88,64 @@ body {
 }
 
 #abline {
-    width: 800px;
-    margin-top: -40px;
+    width: 700px;
+    margin-top: -25px;
     border: solid 3px white;
     border-radius: 100px;
 }
 
 #abdesc {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
+    width: 700px;
 }
 
 .abimg {
     width: 500px;
     display: inline-block;
     position: relative;
-    top: 20px;
+    top: 10px;
+}
+
+.contact {
+    margin-top: 8%;
+    text-align: center;
+
+}
+
+#cnthead {
+    font-family: Aptos-Extrabold;
+    color: white;
+    font-size: 60px;
+}
+
+#cntline {
+    width: 700px;
+    border: solid 3px white;
+    border-radius: 100px;
+    margin-top: -25px;
+}
+
+.cntlist {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    right: 20px;
+    border-bottom: solid 3px #002060;
+}
+
+.contact .cntlist:hover {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid 3px white;
+    transition: .2s;
+}
+
+#email {
+    color: white;
+    font-size: 22px;
+    position: relative;
 }
