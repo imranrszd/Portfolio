@@ -13,6 +13,7 @@ body {
     background-color: #002060;
 }
 
+/* navigation bar */
 .navbar {
     font-size: 32px;
     text-align: center;
@@ -43,10 +44,11 @@ body {
 
 }
 
+/* homepage */
 .homemain {
     text-align: center;
     margin-top: 9%;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .hometext {
@@ -55,7 +57,7 @@ body {
 
 #pftitle {
     font-family: Aptos-Extrabold;
-    font-size: 35px;
+    font-size: 38px;
 }
 
 #homedesc {
@@ -63,6 +65,7 @@ body {
     color: hsl(0, 0%, 82%);
 }
 
+/* about */
 .about {
     text-align: center;
     margin: 5% 0 0 5%;
@@ -131,10 +134,72 @@ body {
     transition: .2s;
 }
 
+/* my project */
 .navbar #project:active {
     margin-top: -50px;
 }
 
+/* course work */
+.course {
+    height: 300px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 100px auto 0 auto;
+}
+
+.coursename {
+    height: 300px;
+    width: 45%;
+    display: inline-block;
+    position: relative;
+    right: 15%;
+    bottom: 45%;
+}
+
+.class {
+    color: white;
+    list-style-type: none;
+    font-size: 30px;
+    margin: 40px 50px 40px 50px;
+    border: solid 5px #00B0F0;
+    border-radius: 20px;
+    width: 200px;
+    padding: 20px 0 20px 0;
+    position: relative;
+    left: 45%;
+
+}
+
+.coursename .class:hover {
+    background-color: #00B0F0;
+    color: #002060;
+    transition: .3s;
+}
+
+.coursevis {
+    color: white;
+    font-size: 50px;
+    display: inline-block;
+    border: solid 4px #00B0F0;
+    width: 50%;
+    height: 250px;
+    margin-top: 20px;
+}
+
+#ISP250 {
+    visibility: hidden;
+    position: relative;
+    top: 5%;
+}
+
+#CSC264 {
+    visibility: hidden;
+    position: relative;
+    bottom: 65%;
+}
+
+
+/* contact */
 .contact {
     margin-top: 8%;
     text-align: center;
