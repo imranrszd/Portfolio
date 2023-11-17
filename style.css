@@ -11,11 +11,14 @@
 body {
     font-family: Aptos, Aptos-Extrabold;
     background-color: #002060;
-    max-width: 5000px;
+    min-width: 1400px;
 }
 
 body::-webkit-scrollbar {
+    /* vertical */
     width: 5px;
+    /* horizontal */
+    height: 5px;
 }
 
 body::-webkit-scrollbar-track {
@@ -221,6 +224,7 @@ body::-webkit-scrollbar-thumb {
     width: 200px;
     position: relative;
     left: 76%;
+    font-weight: bold;
 }
 
 /********** course work **********/
