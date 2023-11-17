@@ -164,7 +164,7 @@ body {
     margin: 2%;
 }
 
-.section1:hover {
+.prjsect:hover .section1 {
     height: 85%;
     width: 40%;
     margin: 0;
@@ -180,7 +180,7 @@ body {
 
 }
 
-.section1:hover~.sectdesc {
+.prjsect:hover .sectdesc {
     bottom: 99%;
 }
 
@@ -191,14 +191,6 @@ body {
     text-decoration: none;
     border-bottom: solid 2px rgba(255, 255, 255, 0);
 
-}
-
-
-
-.prjhead:hover {
-    padding: 3px;
-    border-bottom: solid 2px white;
-    transition: 0.3s;
 }
 
 .prjdesc {
