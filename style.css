@@ -13,7 +13,7 @@ body {
     background-color: #002060;
 }
 
-/* navigation bar */
+/********** navigation bar **********/
 .navbar {
     font-size: 32px;
     text-align: center;
@@ -24,7 +24,7 @@ body {
     display: inline-block;
     border: solid 3px #002060;
     padding: 8px 15px 8px 15px;
-    margin: 2% 0 0 0;
+    margin: 1% 0 0 0;
 }
 
 .navlist:hover {
@@ -34,18 +34,27 @@ body {
     border-radius: 30px;
     font-weight: bold;
     padding: 8px 15px 8px 15px;
-    transition: .25s;
+    transition: .3s;
+    font-size: 34px;
 }
+
 
 .link {
     text-decoration: none;
     color: white;
-    margin: 2% 30px 0 30px;
+    margin: 2% 25px 0 25px;
 
 }
 
-/* homepage */
+.link2 {
+    text-decoration: none;
+    color: white;
+}
+
+/********** homepage **********/
+
 .homemain {
+    border: solid 1px white;
     text-align: center;
     margin-top: 7%;
     font-size: 25px;
@@ -65,7 +74,7 @@ body {
     color: hsl(0, 0%, 82%);
 }
 
-/* about */
+/********** about **********/
 .about {
     text-align: center;
     margin: 5% 0 0 5%;
@@ -134,13 +143,74 @@ body {
     transition: .3s;
 }
 
-/* my project */
-#project:active {
-    margin-top: -50px;
+/********** my project **********/
+.project {
+    height: 1200px;
+    text-align: center;
+    padding: 3%;
 }
 
-/* course work */
+.prjsect {
+    height: 200px;
+    width: 60%;
+    display: inline-block;
+    margin: 3% 0 0 0;
+}
+
+.section1 {
+    border: solid 3px #00B0F0;
+    height: 80%;
+    width: 35%;
+    margin: 2%;
+}
+
+.section1:hover {
+    height: 85%;
+    width: 40%;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.sectdesc {
+    text-align: left;
+    width: 58%;
+    float: right;
+    position: relative;
+    bottom: 107%;
+
+}
+
+.section1:hover~.sectdesc {
+    bottom: 99%;
+}
+
+.prjhead {
+    font-family: Aptos-Extrabold;
+    color: white;
+    width: 80%;
+    text-decoration: none;
+    border-bottom: solid 2px rgba(255, 255, 255, 0);
+
+}
+
+
+
+.prjhead:hover {
+    padding: 3px;
+    border-bottom: solid 2px white;
+    transition: 0.3s;
+}
+
+.prjdesc {
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 93%;
+}
+
+/********** course work **********/
 .course {
+    border: solid 1px white;
     height: 300px;
     text-align: center;
     max-width: 1000px;
@@ -148,6 +218,7 @@ body {
 }
 
 .coursename {
+    border: solid 1px white;
     height: 300px;
     width: 45%;
     display: inline-block;
@@ -182,34 +253,33 @@ body {
 
 }
 
-/* fix */
+/********** fix **********/
 .coursevis #ISP250 {
     visibility: hidden;
     position: relative;
     top: 5%;
 }
 
-/* fix */
+/********** fix **********/
 #CSC264 {
     visibility: hidden;
     position: relative;
     bottom: 65%;
 }
 
-.class:hover {
+#link .class:hover {
     background-color: #00B0F0;
     font-weight: bold;
     color: #002060;
     transition: .3s;
 }
 
-/* fix */
-.course .class:hover .coursevis #ISP250 {
-    background-color: white;
-    visibility: visible;
+/********** fix **********/
+.coursename .class:hover~.coursevis #ISP250 {
+    border: solid 1px white;
 }
 
-/* contact */
+/********** contact **********/
 .contact {
     margin-top: 8%;
     text-align: center;
