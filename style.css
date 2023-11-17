@@ -11,6 +11,20 @@
 body {
     font-family: Aptos, Aptos-Extrabold;
     background-color: #002060;
+    max-width: 5000px;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #002060;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #00B0F0;
+    border-radius: 20px;
 }
 
 /********** navigation bar **********/
@@ -48,15 +62,13 @@ body {
 
 .link2 {
     text-decoration: none;
-    color: white;
 }
 
 /********** homepage **********/
 
 .homemain {
-    border: solid 1px white;
     text-align: center;
-    margin-top: 7%;
+    margin-top: 10%;
     font-size: 25px;
 }
 
@@ -120,10 +132,6 @@ body {
     top: -90px;
 }
 
-#link {
-    text-decoration: none;
-}
-
 #resume {
     text-decoration: none;
     color: #002060;
@@ -157,14 +165,21 @@ body {
     margin: 3% 0 0 0;
 }
 
-.section1 {
+.section {
     border: solid 3px #00B0F0;
     height: 80%;
     width: 35%;
     margin: 2%;
 }
 
-.prjsect:hover .section1 {
+#section1 {
+    background-image: url(images/Project\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.prjsect:hover .section {
     height: 85%;
     width: 40%;
     margin: 0;
@@ -200,9 +215,16 @@ body {
     bottom: 93%;
 }
 
+.date {
+    color: white;
+    text-align: right;
+    width: 200px;
+    position: relative;
+    left: 76%;
+}
+
 /********** course work **********/
 .course {
-    border: solid 1px white;
     height: 300px;
     text-align: center;
     max-width: 1000px;
@@ -210,37 +232,33 @@ body {
 }
 
 .coursename {
-    border: solid 1px white;
     height: 300px;
     width: 45%;
     display: inline-block;
     position: relative;
-    right: 15%;
-    bottom: 45%;
 }
 
 .class {
     color: white;
     list-style-type: none;
     font-size: 30px;
-    margin: 40px 50px 40px 50px;
+    margin: 15px 0 15px 0;
     border: solid 5px #00B0F0;
     border-radius: 20px;
     width: 200px;
     padding: 20px 0 20px 0;
     position: relative;
-    left: 50%;
+    left: 30%;
 
 }
 
 .coursevis {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     display: inline-block;
     border: solid 4px #00B0F0;
     width: 50%;
     height: 250px;
-    margin-top: 20px;
     background-image: url(images/ALL\ OF\ THE\ WEIRDEST\ ANIMAL\ CAFÉS\ IN\ SEOUL.gif);
 
 }
@@ -249,7 +267,7 @@ body {
 .coursevis #ISP250 {
     visibility: hidden;
     position: relative;
-    top: 5%;
+    top: 10%;
 }
 
 /********** fix **********/
@@ -259,7 +277,7 @@ body {
     bottom: 65%;
 }
 
-#link .class:hover {
+.link .class:hover {
     background-color: #00B0F0;
     font-weight: bold;
     color: #002060;
@@ -267,8 +285,8 @@ body {
 }
 
 /********** fix **********/
-.coursename .class:hover~.coursevis #ISP250 {
-    border: solid 1px white;
+.course .class:hover+#ISP250 {
+    color: aqua;
 }
 
 /********** contact **********/
