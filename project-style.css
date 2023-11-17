@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Aptos;
+    src: url(fonts/aptos.ttf);
+}
+
+@font-face {
+    font-family: Aptos-Extrabold;
+    src: url(fonts/aptos-extrabold.ttf);
+}
+
+body {
+    font-family: Aptos, Aptos-Extrabold;
+    background-color: #002060;
+    min-width: 1300px;
+}
+
+body::-webkit-scrollbar {
+    /* vertical */
+    width: 5px;
+    /* horizontal */
+    height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #002060;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #00B0F0;
+    border-radius: 20px;
+}
+
+header {
+    width: 87%;
+    text-align: center;
+}
+
+.back {
+    width: 70px;
+    background-color: #002060;
+    color: #00B0F0;
+    border: solid 3px #00B0F0;
+    border-radius: 30px;
+    margin: 60px;
+    padding: 8px 15px 8px 15px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
+}
+
+.back:hover {
+    background-color: #00B0F0;
+    color: white;
+    border: solid 3px #002060;
+    width: 80px;
+    margin-right: 50px;
+    transition: 0.2s;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.title {
+    font-family: Aptos-Extrabold;
+    background-color: #00B0F0;
+    border: solid 1px #00B0F0;
+    border-radius: 30px;
+    color: #002060;
+    display: inline-block;
+    text-align: center;
+    width: 800px;
+    height: 150px;
+    font-size: 44px;
+    position: relative;
+    bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.sect {
+    height: 1200px;
+    text-align: center;
+}
+
+.section {
+    height: 1200px;
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.github {
+    color: #002060;
+    border: solid 2px #00B0F0;
+    background-color: #00B0F0;
+    width: 150px;
+    display: block;
+    margin: 0 auto 0 auto;
+    border-radius: 30px;
+    font-size: 26px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.github:hover {
+    color: white;
+    width: 170px;
+    transition: .3s;
+}
+
+.input {
+    color: white;
+    font-size: 34px;
+    width: 900px;
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.description {
+    color: white;
+    font-size: 22px;
+    width: 900px;
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto 0 auto;
+    padding-left: 20px;
+}
+
+.section1 {
+    border: solid 5px #00B0F0;
+    height: 510px;
+    width: 900px;
+    display: inline-block;
+    margin: 0 0 0 0;
+}
+
+.video {
+    max-width: 100%;
+    max-height: 100%;
+}

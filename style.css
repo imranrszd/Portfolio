@@ -150,7 +150,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #resume:hover {
-    border-radius: 5px;
+    color: white;
+    width: 135px;
     transition: .3s;
 }
 
