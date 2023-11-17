@@ -184,6 +184,20 @@ body::-webkit-scrollbar-thumb {
     background-size: cover;
 }
 
+#section2 {
+    background-image: url(images/Project\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#section4 {
+    background-image: url(images/Portfolio\ Thumb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .prjsect:hover {
     border: solid 3px #00B0F0;
     transition: 0.3s;
