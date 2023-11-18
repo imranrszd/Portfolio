@@ -231,6 +231,7 @@ body::-webkit-scrollbar-thumb {
 
 .project a:hover {
     border: solid 3px #00B0F0;
+    background-color: hsl(196, 100%, 47%, 0.2);
     transition: 0.3s;
 }
 
@@ -296,7 +297,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .course a:hover {
-    background-color: #00B0F0;
+    background-color: hsl(196, 100%, 47%);
     font-weight: bold;
     color: #002060;
     transition: .3s;
