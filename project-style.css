@@ -35,7 +35,8 @@ header {
     text-align: center;
 }
 
-.back {
+
+header a {
     width: 70px;
     background-color: #002060;
     color: #00B0F0;
@@ -51,7 +52,7 @@ header {
     bottom: 40px;
 }
 
-.back:hover {
+header a:hover {
     background-color: #00B0F0;
     color: white;
     border: solid 3px #002060;

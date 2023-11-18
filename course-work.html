@@ -9,57 +9,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<style>
-    #course {
-        background-color: #00B0F0;
-        color: #002060;
-        border: solid 3px #00B0F0;
-        border-radius: 30px;
-        padding: 8px 15px 8px 15px;
-        font-weight: bold;
-        font-size: 34px;
-    }
-</style>
-
 <body>
     <!-- navigation bar -->
-    <div class="navbar">
-        <ul class="navulist">
-            <a href="home.html" class="link">
-                <li class="navlist" id="home">home</li>
-            </a>
-            <a href="about.html" class="link">
-                <li class="navlist" id="about">about</li>
-            </a>
-            <a href="my-project.html" class="link">
-                <li class="navlist" id="project">my project</li>
-            </a>
-            <a href="course-work.html" class="link">
-                <li class="navlist" id="course">course work</li>
-            </a>
-            <a href="contact.html" class="link">
-                <li class="navlist" id="contact">contact</li>
-            </a>
-        </ul>
-    </div>
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="about.html">about</a>
+        <a href="my-project.html">my project</a>
+        <a href="course-work.html" id="select">course work</a>
+        <a href="contact.html">contact</a>
+    </nav>
     <!-- navigation bar -->
 
     <div class="course">
-        <div class="coursename">
-            <a class="link" href="https://sites.google.com/student.uitm.edu.my/isp250-imran?usp=sharing"
-                target="_blank">
-                <div class="class" id="ISP250but">ISP250</div>
+        <div>
+            <a href="https://sites.google.com/student.uitm.edu.my/isp250-imran?usp=sharing" target="_blank">
+                ISP250
             </a>
-            <a class="link" href="" target="_blank">
-                <div class="class">CSC264</div>
+
+            <a href="" target="_blank">
+                CSC264
             </a>
         </div>
 
-        <div class="coursevis">
-            <!-- fix -->
-            <p id="ISP250">Information System Development</p>
-            <p id="CSC264">Introduction to Mobile & Web Application</p>
-        </div>
+        <div></div>
 
     </div>
 </body>

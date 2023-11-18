@@ -9,101 +9,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<style>
-    #project {
-        background-color: #00B0F0;
-        color: #002060;
-        border: solid 3px #00B0F0;
-        border-radius: 30px;
-        padding: 8px 15px 8px 15px;
-        font-weight: bold;
-        font-size: 34px;
-    }
-</style>
-
 <body>
     <!-- navigation bar -->
-    <div class="navbar">
-        <ul class="navulist">
-            <a href="home.html" class="link">
-                <li class="navlist" id="home">home</li>
-            </a>
-            <a href="about.html" class="link">
-                <li class="navlist" id="about">about</li>
-            </a>
-            <a href="my-project.html" class="link">
-                <li class="navlist" id="project">my project</li>
-            </a>
-            <a href="course-work.html" class="link">
-                <li class="navlist" id="course">course work</li>
-            </a>
-            <a href="contact.html" class="link">
-                <li class="navlist" id="contact">contact</li>
-            </a>
-        </ul>
-    </div>
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="about.html">about</a>
+        <a href="my-project.html" id="select">my project</a>
+        <a href="course-work.html">course work</a>
+        <a href="contact.html">contact</a>
+    </nav>
     <!-- navigation bar -->
 
     <div class="project">
         <a href="Cinema-Booking-System.html">
-            <div class="prjsect">
-                <div class="section" id="section1">
-
-                </div>
-
-                <div class="sectdesc">
-                    <h1 class="prjhead">Cinema Booking System</h1>
-
-                    <p class="prjdesc">
-                        System that help the customer in buying the ticket (choose the movie & seat) as well
-                        as ordering food and drink. It also generate the receipt at the end. <br><br>
-
-                        desc: First ever project with two of my friend. Really proud how it turned out to be
-                        especially for a beginner like us.
-                    </p>
-                </div>
-
-                <div class="date">
-                    June – July 2022
-                </div>
-
-            </div>
-        </a>
-
-
-        <a href="Bus-Reservation-Sytem.html" class="link2">
-            <div class="prjsect">
-                <div class="section" id="section2">
-
-                </div>
-
-                <div class="sectdesc">
-                    <h1 class="prjhead">Bus Reservation System</h1>
-
-                    <p class="prjdesc">
-                        System that help the customer in reserve a bus ticket, with an option of digital and physical
-                        ticket. <br><br>
-
-                        desc: An introduction to OOD in java, OOP. A bit challenging but also exciting.
-
-                    </p>
-                </div>
-                <div class="date">
-                    Dec. 2022 – Jan. 2023
-                </div>
-        </a>
-    </div>
-
-    <a href="" class="link2" target="_blank">
-        <div class="prjsect">
-            <div class="section" id="section3">
-
-            </div>
+            <div class="section" id="section1"></div>
 
             <div class="sectdesc">
-                <h1 class="prjhead">iPhone Reseller System</h1>
+                <h1>Cinema Booking System</h1>
 
-                <p class="prjdesc">
+                <p>
+                    System that help the customer in buying the ticket (choose the movie & seat) as well
+                    as ordering food and drink. It also generate the receipt at the end. <br><br>
+
+                    desc: First ever project with two of my friend. Really proud how it turned out to be
+                    especially for a beginner like us.
+                </p>
+            </div>
+
+            <div class="date">
+                June – July 2022
+            </div>
+
+        </a>
+
+
+        <a href="Bus-Reservation-Sytem.html">
+            <div class="section" id="section2"></div>
+
+            <div class="sectdesc">
+                <h1>Bus Reservation System</h1>
+
+                <p>
+                    System that help the customer in reserve a bus ticket, with an option of digital and physical
+                    ticket. <br><br>
+
+                    desc: An introduction to OOD in java, OOP. A bit challenging but also exciting.
+
+                </p>
+            </div>
+            <div class="date">
+                Dec. 2022 – Jan. 2023
+            </div>
+        </a>
+
+        <a href="">
+            <div class="section" id="section3"></div>
+
+            <div class="sectdesc">
+                <h1>iPhone Reseller System</h1>
+
+                <p>
                     Website that sell secondhand iPhone online, with a feature of login in, selecting, searching and
                     much more. <br><br>
 
@@ -114,17 +79,16 @@
             <div class="date">
                 Oct. – Dec. 2023
             </div>
-    </a>
-    </div>
+        </a>
 
-    <a href="https://github.com/imranrszd/Portfolio" class="link2" target="_blank">
-        <div class="prjsect">
+        <a href="https://github.com/imranrszd/Portfolio" target="_blank">
+
             <div class="section" id="section4"></div>
 
             <div class="sectdesc">
-                <h1 class="prjhead">My Portfolio (This Site)</h1>
+                <h1>My Portfolio (This Site)</h1>
 
-                <p class="prjdesc">
+                <p>
                     My portfolio that tell more about me how experienced I am in programming and how to contact me. Im
                     using netlify to host this site. <br><br>
 
@@ -134,9 +98,10 @@
             <div class="date">
                 Oct. 2023
             </div>
-        </div>
-    </a>
+        </a>
+
     </div>
+
 </body>
 
 </html>

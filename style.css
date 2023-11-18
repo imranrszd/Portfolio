@@ -12,6 +12,7 @@ body {
     font-family: Aptos, Aptos-Extrabold;
     background-color: #002060;
     min-width: 1500px;
+    color: white;
 }
 
 body::-webkit-scrollbar {
@@ -36,35 +37,34 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
 }
 
-.navlist {
-    list-style-type: none;
-    display: inline-block;
+.navbar a {
     border: solid 3px #002060;
+    display: inline-block;
     padding: 8px 15px 8px 15px;
-    margin: 1% 0 0 0;
+    margin: 3% 15px 0 15px;
+    color: white;
+    text-decoration: none;
 }
 
-.navlist:hover {
+.navbar a:hover {
     color: #002060;
     background-color: #00B0F0;
     border: solid 3px #00B0F0;
     border-radius: 30px;
     font-weight: bold;
     padding: 8px 15px 8px 15px;
-    transition: .3s;
+    transition: .25s;
     font-size: 34px;
 }
 
-
-.link {
-    text-decoration: none;
-    color: white;
-    margin: 2% 25px 0 25px;
-
-}
-
-.link2 {
-    text-decoration: none;
+.navbar #select {
+    background-color: #00B0F0;
+    color: #002060;
+    border: solid 3px #00B0F0;
+    border-radius: 30px;
+    padding: 8px 15px 8px 15px;
+    font-weight: bold;
+    font-size: 34px;
 }
 
 /********** homepage **********/
@@ -75,16 +75,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 25px;
 }
 
-.hometext {
-    color: white;
-}
-
-#pftitle {
+.homemain #title {
     font-family: Aptos-Extrabold;
     font-size: 38px;
 }
 
-#homedesc {
+.homemain #desc {
     font-size: 24px;
     color: hsl(0, 0%, 82%);
 }
@@ -98,7 +94,7 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
 }
 
-.abdesc {
+.about div:nth-child(1) {
     width: 700px;
     height: 500px;
     margin-left: 100px;
@@ -109,33 +105,33 @@ body::-webkit-scrollbar-thumb {
     bottom: 30px;
 }
 
-#abouthead {
+.about h1 {
     font-family: Aptos-Extrabold;
     color: white;
     font-size: 60px;
 }
 
-#abline {
+.about hr {
     width: 700px;
     margin-top: -25px;
     border: solid 3px white;
     border-radius: 100px;
 }
 
-#abdesc {
+.about p {
     color: white;
     font-size: 20px;
     width: 670px;
 }
 
-.abimg {
+.about div:nth-child(2) {
     width: 500px;
     display: inline-block;
     position: relative;
     top: -90px;
 }
 
-#resume {
+.about a {
     text-decoration: none;
     color: #002060;
     margin-top: 40px;
@@ -149,7 +145,7 @@ body::-webkit-scrollbar-thumb {
     display: inline-block;
 }
 
-#resume:hover {
+.about a:hover {
     color: white;
     width: 135px;
     transition: .3s;
@@ -162,13 +158,14 @@ body::-webkit-scrollbar-thumb {
     padding: 2%;
 }
 
-.prjsect {
+.project a {
     border: solid 3px hsla(196, 100%, 47%, 0);
     padding: 30px;
     height: 200px;
     width: 60%;
     display: inline-block;
     margin: 3% 0 0 0;
+    text-decoration: none;
 }
 
 .section {
@@ -176,46 +173,25 @@ body::-webkit-scrollbar-thumb {
     height: 80%;
     max-width: 300px;
     margin: 2%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #section1 {
     background-image: url(images/Project\ 1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 #section2 {
     background-image: url(images/Project\ 2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 #section3 {
     background-image: url(images/VTech\ logo\ thumbnail.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 #section4 {
     background-image: url(images/Portfolio\ Thumb.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.prjsect:hover {
-    border: solid 3px #00B0F0;
-    transition: 0.3s;
-}
-
-.prjsect:hover .section {
-    height: 90%;
-    max-width: 330px;
-    margin: 0;
-    transition: 0.3s;
 }
 
 .sectdesc {
@@ -227,11 +203,7 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-.prjsect:hover .sectdesc {
-    bottom: 105%;
-}
-
-.prjhead {
+.sectdesc h1 {
     font-family: Aptos-Extrabold;
     color: white;
     width: 80%;
@@ -240,11 +212,27 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-.prjdesc {
+.sectdesc p {
     color: white;
     width: 100%;
     position: relative;
     bottom: 93%;
+}
+
+.project a:hover {
+    border: solid 3px #00B0F0;
+    transition: 0.3s;
+}
+
+.project a:hover .section {
+    height: 90%;
+    max-width: 330px;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.project a:hover .sectdesc {
+    bottom: 105%;
 }
 
 .date {
@@ -260,32 +248,33 @@ body::-webkit-scrollbar-thumb {
 .course {
     height: 300px;
     text-align: center;
-    max-width: 1000px;
+    max-width: 950px;
     margin: 100px auto 0 auto;
 }
 
-.coursename {
+.course div:nth-child(1) {
     height: 300px;
-    width: 45%;
+    width: 250px;
     display: inline-block;
+    margin-right: 40px;
     position: relative;
+    bottom: 60px;
 }
 
-.class {
+.course a {
     color: white;
-    list-style-type: none;
+    text-decoration: none;
     font-size: 30px;
-    margin: 15px 0 15px 0;
+    margin: 15px 20px 15px 20px;
     border: solid 5px #00B0F0;
     border-radius: 20px;
-    width: 200px;
-    padding: 20px 0 20px 0;
-    position: relative;
-    left: 30%;
+    width: 150px;
+    padding: 20px;
+    display: inline-block;
 
 }
 
-.coursevis {
+.course div:nth-child(2) {
     color: white;
     font-size: 40px;
     display: inline-block;
@@ -296,21 +285,7 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-/********** fix **********/
-#ISP250 {
-    visibility: hidden;
-    position: relative;
-    top: 10%;
-}
-
-/********** fix **********/
-#CSC264 {
-    visibility: hidden;
-    position: relative;
-    bottom: 65%;
-}
-
-.class:hover {
+.course a:hover {
     background-color: #00B0F0;
     font-weight: bold;
     color: #002060;
@@ -318,8 +293,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 /********** fix **********/
-#ISP250but:hover .coursevis #ISP250 {
-    visibility: visible;
+.course a:nth-child(1):hover .course div {
+    border: solid 1px white;
+    background-image: url(images/Portfolio\ Thumb.png);
 }
 
 /********** contact **********/
@@ -329,38 +305,36 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-#cnthead {
+.contact h1 {
     font-family: Aptos-Extrabold;
     color: white;
     font-size: 60px;
 }
 
-#cntline {
+.contact hr {
     width: 700px;
     border: solid 3px white;
     border-radius: 100px;
     margin-top: -25px;
 }
 
-.cntlist {
-    list-style-type: none;
+.contact a {
+    text-decoration: none;
+    color: white;
     display: inline-block;
     font-size: 25px;
-    margin-top: 15px;
-    margin-bottom: 30px;
-    position: relative;
-    right: 20px;
+    margin: 15px 35px 30px 35px;
     border-bottom: solid 3px #002060;
 }
 
-.contact .cntlist:hover {
+.contact a:hover {
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: solid 3px white;
     transition: .2s;
 }
 
-#email {
+.contact p {
     color: white;
     font-size: 22px;
     position: relative;
