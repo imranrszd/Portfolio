@@ -297,7 +297,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /********** fix **********/
-.coursevis #ISP250 {
+#ISP250 {
     visibility: hidden;
     position: relative;
     top: 10%;
@@ -310,7 +310,7 @@ body::-webkit-scrollbar-thumb {
     bottom: 65%;
 }
 
-.link .class:hover {
+.class:hover {
     background-color: #00B0F0;
     font-weight: bold;
     color: #002060;
@@ -318,8 +318,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 /********** fix **********/
-.course .class:hover+#ISP250 {
-    color: aqua;
+#ISP250but:hover .coursevis #ISP250 {
+    visibility: visible;
 }
 
 /********** contact **********/
