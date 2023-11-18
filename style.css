@@ -17,7 +17,7 @@ body {
 
 body::-webkit-scrollbar {
     /* vertical */
-    width: 5px;
+    width: 0px;
     /* horizontal */
     height: 5px;
 }
@@ -92,6 +92,16 @@ body::-webkit-scrollbar-thumb {
     margin-top: 5%;
     height: 500px;
     overflow: hidden;
+    animation-name: slideup;
+    animation-duration: 1s;
+
+}
+
+
+@keyframes slideup {
+    from {
+        transform: translateY(25%);
+    }
 }
 
 .about div:nth-child(1) {
