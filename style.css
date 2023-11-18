@@ -11,7 +11,7 @@
 body {
     font-family: Aptos, Aptos-Extrabold;
     background-color: #002060;
-    min-width: 1400px;
+    min-width: 1500px;
 }
 
 body::-webkit-scrollbar {
@@ -174,7 +174,7 @@ body::-webkit-scrollbar-thumb {
 .section {
     border: solid 3px #00B0F0;
     height: 80%;
-    width: 35%;
+    max-width: 300px;
     margin: 2%;
 }
 
@@ -187,6 +187,13 @@ body::-webkit-scrollbar-thumb {
 
 #section2 {
     background-image: url(images/Project\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#section3 {
+    background-image: url(images/VTech\ logo\ thumbnail.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -205,8 +212,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .prjsect:hover .section {
-    height: 85%;
-    width: 40%;
+    height: 90%;
+    max-width: 330px;
     margin: 0;
     transition: 0.3s;
 }
@@ -221,7 +228,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .prjsect:hover .sectdesc {
-    bottom: 99%;
+    bottom: 105%;
 }
 
 .prjhead {
