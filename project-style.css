@@ -51,6 +51,7 @@ header {
     position: relative;
     bottom: 40px;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 .back:hover {
@@ -59,7 +60,6 @@ header {
     border: solid 3px #002060;
     width: 80px;
     margin-right: 50px;
-    transition: 0.2s;
 }
 
 
@@ -104,12 +104,12 @@ header {
     padding: 10px;
     font-weight: bold;
     text-decoration: none;
+    transition: .3s;
 }
 
 .github:hover {
     color: white;
     width: 170px;
-    transition: .3s;
 }
 
 .input {
