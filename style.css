@@ -33,16 +33,18 @@ body::-webkit-scrollbar-thumb {
 
 /********** navigation bar **********/
 .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
     font-size: 32px;
-    text-align: center;
 }
 
 .navbar a {
-    border: solid 3px #002060;
+    /*border: solid 3px #002060;*/
     border-radius: 5px;
-    display: inline-block;
-    padding: 8px 15px 8px 15px;
-    margin: 3% 15px 0 15px;
+    padding: 8px 15px;
+    margin: 0 15px;
     color: white;
     text-decoration: none;
     transition: .25s;
@@ -52,18 +54,19 @@ body::-webkit-scrollbar-thumb {
     color: #002060;
     background-color: #00B0F0;
     border: solid 3px #00B0F0;
-    border-radius: 30px;
+    border-radius: 25px;
     font-weight: bold;
-    padding: 8px 15px 8px 15px;
+    margin: 0 20px;
+    padding: 8px 15px;
     font-size: 34px;
 }
 
 .navbar #select {
-    background-color: #00B0F0;
     color: #002060;
+    background-color: #00B0F0;
     border: solid 3px #00B0F0;
     border-radius: 30px;
-    padding: 8px 15px 8px 15px;
+    padding: 8px 15px;
     font-weight: bold;
     font-size: 34px;
 }
@@ -72,7 +75,7 @@ body::-webkit-scrollbar-thumb {
 
 .homemain {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 8%;
     font-size: 25px;
 }
 
