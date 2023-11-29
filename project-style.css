@@ -10,7 +10,8 @@
 
 body {
     font-family: Aptos, Aptos-Extrabold;
-    background-color: #002060;
+    background: linear-gradient(45deg, #002060, rgb(2, 176, 176));
+    min-height: 93vh;
     min-width: 1300px;
 }
 
@@ -40,7 +41,7 @@ header {
     width: 70px;
     background-color: #002060;
     color: #00B0F0;
-    border: solid 3px #00B0F0;
+    border: solid 3px #002060;
     border-radius: 30px;
     margin: 60px;
     padding: 8px 15px 8px 15px;
@@ -57,7 +58,7 @@ header {
 .back:hover {
     background-color: #00B0F0;
     color: white;
-    border: solid 3px #002060;
+    border: solid 3px transparent;
     width: 80px;
     margin-right: 50px;
 }
