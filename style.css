@@ -91,10 +91,12 @@ body::-webkit-scrollbar-thumb {
 
 /********** about **********/
 .about {
-    text-align: center;
-    margin: 5% 0 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 5%;
     height: 500px;
+    width: 100%;
     overflow: hidden;
     animation-name: slideup;
     animation-duration: 1s;
@@ -109,14 +111,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about div:nth-child(1) {
-    width: 700px;
+    width: 600px;
     height: 500px;
-    margin-left: 100px;
-    margin-right: -50px;
     text-align: left;
-    display: inline-block;
-    position: relative;
-    bottom: 30px;
 }
 
 .about h1 {
@@ -126,8 +123,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about hr {
-    width: 700px;
-    margin-top: -25px;
+    width: 600px;
     border: solid 3px white;
     border-radius: 100px;
 }
@@ -135,14 +131,20 @@ body::-webkit-scrollbar-thumb {
 .about p {
     color: white;
     font-size: 20px;
-    width: 670px;
+    width: 600px;
 }
 
 .about div:nth-child(2) {
-    width: 500px;
-    display: inline-block;
-    position: relative;
-    top: -90px;
+    display: flex;
+    align-self: flex-start;
+    border: 3px solid white;
+    height: 250px;
+    width: 250px;
+    margin: 10px 0 0 50px;
+    border-radius: 50%;
+    background-image: url(images/photo_2021-10-13_06-56-45.jpg);
+    background-size: cover;
+    background-position: 0 -40px;
 }
 
 .about a {
@@ -155,67 +157,70 @@ body::-webkit-scrollbar-thumb {
     border: solid 3px #00B0F0;
     width: 120px;
     border-radius: 40px;
-    text-align: center;
-    display: inline-block;
+    padding: 5px 20px;
     transition: .3s;
 }
 
 .about a:hover {
     color: white;
-    width: 135px;
+    padding: 5px 30px;
 }
 
 /********** my project **********/
 .project {
-    height: 1350px;
-    text-align: center;
-    padding: 2%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.project a {
-    border: solid 3px hsla(196, 100%, 47%, 0);
+div>h1,
+div>h2 {
+    display: flex;
+    justify-content: left;
+    width: 55%;
+    margin: 10px;
+}
+
+
+
+.project>a {
     padding: 30px;
-    height: 200px;
-    width: 60%;
-    display: inline-block;
-    margin: 3% 0 0 0;
+    display: flex;
+    height: 230px;
+    width: 65%;
     text-decoration: none;
+    margin-bottom: 50px;
     transition: 0.3s;
 }
 
 .section {
     border: solid 3px #00B0F0;
     height: 80%;
-    max-width: 300px;
-    margin: 2%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    width: 35%;
+    margin: 0 4%;
     transition: 0.4s;
+    position: relative;
 }
 
-#section1 {
-    background-image: url(images/Project\ 1.png);
+.project a:hover {
+    border: solid 3px #00B0F0;
+    background-color: hsl(196, 100%, 47%, 0.2);
 }
 
-#section2 {
-    background-image: url(images/Project\ 2.png);
+.project a:hover .section {
+    height: 90%;
+    width: 40%;
 }
 
-#section3 {
-    background-image: url(images/VTech\ logo\ thumbnail.png);
-}
-
-#section4 {
-    background-image: url(images/Portfolio\ Thumb.png);
+.project a:hover .sectdesc>h1 {
+    border-bottom: solid 2px white;
 }
 
 .sectdesc {
-    text-align: left;
     width: 58%;
-    float: right;
     position: relative;
-    bottom: 107%;
 
 }
 
@@ -230,33 +235,16 @@ body::-webkit-scrollbar-thumb {
 
 .sectdesc p {
     color: white;
-    width: 100%;
-    position: relative;
-    bottom: 93%;
+    width: 500px;
 }
 
-.project a:hover {
-    border: solid 3px #00B0F0;
-    background-color: hsl(196, 100%, 47%, 0.2);
-}
-
-.project a:hover .section {
-    height: 90%;
-    max-width: 330px;
-    margin: 0;
-}
-
-.project a:hover .sectdesc {
-    bottom: 105%;
-}
 
 .date {
     color: white;
-    text-align: right;
-    width: 200px;
     position: relative;
-    left: 76%;
     font-weight: bold;
+    display: flex;
+    justify-content: right;
 }
 
 /********** course work **********/
@@ -315,28 +303,36 @@ body::-webkit-scrollbar-thumb {
 
 /********** contact **********/
 .contact {
-    margin-top: 8%;
-    text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
 }
 
 .contact h1 {
     font-family: Aptos-Extrabold;
     color: white;
     font-size: 60px;
+    width: 270px;
 }
 
 .contact hr {
     width: 700px;
     border: solid 3px white;
     border-radius: 100px;
-    margin-top: -25px;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
 }
 
 .contact a {
     text-decoration: none;
     color: white;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     font-size: 25px;
     margin: 15px 35px 30px 35px;
     border-bottom: solid 3px #002060;
@@ -349,8 +345,8 @@ body::-webkit-scrollbar-thumb {
     border-bottom: solid 3px white;
 }
 
-.contact p {
+.contact>p {
     color: white;
     font-size: 22px;
-    position: relative;
+    margin-bottom: -5px;
 }
