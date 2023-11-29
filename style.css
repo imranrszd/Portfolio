@@ -98,7 +98,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 2%;
     height: 500px;
     width: 100%;
     overflow: hidden;
@@ -144,7 +144,7 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid white;
     height: 250px;
     width: 250px;
-    margin: 10px 0 0 50px;
+    margin: 40px 0 0 60px;
     border-radius: 50%;
     background-image: url(images/photo_2021-10-13_06-56-45.jpg);
     background-size: cover;
@@ -309,6 +309,7 @@ div>h2 {
     border-radius: 20px;
     width: 150px;
     padding: 20px;
+    text-align: center;
 
 }
 
