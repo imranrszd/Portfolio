@@ -301,6 +301,7 @@ div>h2 {
 }
 
 .course a {
+    display: flex;
     color: white;
     text-decoration: none;
     font-size: 30px;
@@ -309,8 +310,6 @@ div>h2 {
     border-radius: 20px;
     width: 150px;
     padding: 20px;
-    text-align: center;
-
 }
 
 .banner {
