@@ -16,3 +16,9 @@ function changeTitle2() {
 } function hideTitle2() {
     CSC264.style.visibility = 'collapse';
 }
+
+let loader = document.getElementById('preloader');
+
+window.addEventListener('load', function () {
+    loader.style.display = 'none';
+})
