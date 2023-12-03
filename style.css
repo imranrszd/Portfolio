@@ -37,7 +37,7 @@ body::-webkit-scrollbar-thumb {
 
 #preloader {
     background: #001E31 url(video/Spinner\ Loader\ -\ Gooey\ light\ Effect.gif) no-repeat center center;
-    background-size: 15%;
+    background-size: 10%;
     height: 100vh;
     width: 100%;
     position: fixed;
